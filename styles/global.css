@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+}
+
+@media print {
+  .App .right .print-btn {
+    display: none;
+  }
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+  width: 100%;
+}
+
+.App .left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100vh;
+}
+
+.App .left input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.App .right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+
+.App .right .right-title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2f80ed;
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.App .right .para {
+  line-height: 1.4rem;
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+.App .right .sect {
+  padding-bottom: 1rem;
+}
+
+.App .right .tl-title {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: #002333;
+  text-transform: uppercase;
+}
+
+.App .right .tl-title-2 {
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: #2d9cdb;
+  text-transform: uppercase;
+}
+
+.App .right .tl-content {
+  border-left: 1px solid #ccc;
+  padding-left: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.App .right .tl-title-2::before {
+  content: '';
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #2d9cdb;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 0;
+}
+/*# sourceMappingURL=App.css.map */
