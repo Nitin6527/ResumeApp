@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { FormContext } from './FormContext';
 import Image from 'next/image';
-import avatar from './avatar.jpg';
+import avatar from '../../public/images/avatar.jpg';
 import Pdf from 'react-to-pdf';
 import { FaStar } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
@@ -67,7 +67,7 @@ export default function Resume() {
     color: '#f7f7f7ec',
     paddingTop: '.4rem',
   };
-  useEffect(() => {}, [typeof window !== 'undefined' && localStorage.getItem('recent-image')]);
+  useEffect(() => { }, [typeof window !== 'undefined' && localStorage.getItem('recent-image')]);
 
   const inputRef = useRef(null);
   const [isDownload, setIsDownload] = useRecoilState(downloadStatus);
@@ -141,6 +141,7 @@ export default function Resume() {
                       borderRadius: '50%',
                       border: '8px solid #002333',
                     }}
+                    height={100} width={100}
                     src={typeof window !== 'undefined' && localStorage.getItem('recent-image')}
                     alt="Profile"
                   />

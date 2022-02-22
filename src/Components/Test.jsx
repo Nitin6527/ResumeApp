@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import Form from 'react-bootstrap/Form';
 import { Container, Row, Col } from 'react-bootstrap';
-import avatar from './avatar.jpg';
+import avatar from '../../public/images/avatar.jpg';
 import Pdf from 'react-to-pdf';
 export default function Footer() {
   const navStyle = {
@@ -45,7 +45,7 @@ export default function Footer() {
           <div className="left-content">
             <div className="profile">
               <div className="image">
-                <Image height={20} width={20} src={avatar} alt="" />
+                <Image height={100} width={100} src={avatar} alt="" />
               </div>
               <h2 className="name">{firstName + ' ' + lastName}</h2>
               <p className="career">{profession}</p>
